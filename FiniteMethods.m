@@ -14,6 +14,6 @@ iter = 1000;
 
 % We are looking for x in A*x=sol, and initial_guess is first guess for x
 
-solution = SOR(A,initial_guess,sol,omega,iter,1)
+solution = SOR(A*A,initial_guess,sol,omega,iter,1)
 
 
